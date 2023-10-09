@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0a3a71ca;
+  min-height: 100vh;
+}
+
+select {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+}
