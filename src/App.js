@@ -1,30 +1,122 @@
 import './App.css';
-import { Video, Img } from './Components/Video.js'
+import Video from './Components/Video.js'
 
 function App() {
+  let video2 = {
+    src: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+    alt: "tbumbail1",
+    title: "React3",
+    channel: "Codewithme04",
+    views: "2m",
+    time: "12mins",
+    verified: true
+  }
   return (
     <>
       <div>
-        <Video/>
-        <Img
-          imgalt="Img"
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail1"
+          title="React1"
+          channel="Codewithme04"
+          views="1.2k"
+          time="12mins"
+          verified={false}
         />
-        <div style={{
-          backgroundColor: "red",
-          color: "white"
-        }}>Hello</div>
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail1"
+          title="React1"
+          channel="Codewithme04"
+          views="1.2k"
+          time="12mins"
+          verified={false}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail1"
+          title="React1"
+          channel="Codewithme04"
+          views="1.2k"
+          time="12mins"
+          verified={false}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail1"
+          title="React1"
+          channel="Codewithme04"
+          views="1.2k"
+          time="12mins"
+          verified={false}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          alt="tbumbail2"
+          title="React2"
+          channel="Codewithme04"
+          views="4.5k"
+          time="5mins"
+          verified={true}
+        />
+        <Video
+          {...video2}
+        />
       </div>
-      <label htmlFor="language">Select a Programming Language:</label>
-      <select name="language" id="language">
-        <option value="javascript">JavaScript</option>
-        <option value="python">Python</option>
-        <option value="c++" disabled="">
-          C++
-        </option>
-        <option value="java" selected="">
-          Java
-        </option>
-      </select>
     </>
   )
 }

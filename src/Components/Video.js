@@ -1,18 +1,28 @@
-function Video() {
+function Video({ title, src, alt, channel = "codewithme04", views, time, verified }) {
+    let channelhtml
+
+    if (verified) {
+        channelhtml = <div className="channel">{channel} ✅</div>
+    }
+    else {
+        channelhtml = <div className="channel">{channel} ❌</div>
+    }
     return (
-        <div>
-            Video
-        </div>
+        <>
+            <div className="container">
+                <div className="pic">
+                    <img src={src} alt={alt} />
+                </div>
+                <div className="title">{title}</div>
+                {channelhtml}
+                <div className="views">
+                    {views} views <span>.</span> {time}
+                </div>
+            </div>
+        </>
     )
 }
 
-function Img({imgalt}) {
-    return (
-        <img
-            src="https://i.imgur.com/MK3eW3Am.jpg"
-            alt={imgalt}
-        />
-    )
-}
 
-export { Video, Img }
+
+export default Video

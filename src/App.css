@@ -1,19 +1,27 @@
-* {
-  margin: 0;
-  padding: 0;
+body{
+  margin: 12px;
+  padding: 12px;
+  background-color: rgba(128, 128, 128, 0.949);
 }
 
-body {
-  background: #0a3a71ca;
-  min-height: 100vh;
+.container{
+  width: 15em;
+  margin: 0 0.2em;
+  float: left;
 }
-
-select {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+.pic img{
+  width: 100%;
 }
-
-select:focus {
-  outline: none;
+.title{
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.channel, .views{
+  font-size: small;
+  color: #cccccc;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.views span{
+  padding: 0 0.5em;
 }
